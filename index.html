@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario Bros. - The Movie</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-video">
+      <video class="video" autoplay loop muted>
+        <source src="./src/videos/video-mario.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <header class="header">
+      <a href="">
+        <img
+          src="./src/images/logo-chapeu-mario.png"
+          class="logo"
+          alt="Mario's hat logo"
+        />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="https://github.com/Diego-Malta">Details</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="information">
+        <img
+          src="./src/images/titulo.png"
+          class="image-title"
+          alt="Mario's movie title"
+        />
+        <p class="description">
+          Mario is a mustachioed plumber along with his brother Luigi.<br/>One day, they ended up in the Mushroom Kingdom, ruled by Princess Peach, but threatened by the King of Koopas, known as Bowser, who does everything to reign everywhere.<br/> Mario and Luigi must protect Princess Peach, and stop Bowser and his minions.
+        </p>
+        <button class="trailer-button">Watch trailer</button>
+      </div>
+      <img
+        class="mario"
+        src="./src/images/super-mario-chars.png"
+        alt="Chars in Mario"
+      />
+      <div class="modal">
+        <div class="modal-content">
+          <spam class="modal-close" ><a href="#">X</a></spam>
+          <iframe
+            title="Official trailer"
+            frameborder="1"
+            id="video"
+            width="560"
+            height="315"
+            allow="acelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
